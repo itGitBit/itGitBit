@@ -1,0 +1,38 @@
+"filename", "language", "CSS", "Markdown", "JSON", "JavaScript JSX", "JavaScript", "HTML", "XML", "comment", "blank", "total"
+"c:\Development\Recipes\frontend\README.md", "Markdown", 0, 38, 0, 0, 0, 0, 0, 0, 33, 71
+"c:\Development\Recipes\frontend\package-lock.json", "JSON", 0, 0, 18455, 0, 0, 0, 0, 0, 1, 18456
+"c:\Development\Recipes\frontend\package.json", "JSON", 0, 0, 49, 0, 0, 0, 0, 0, 1, 50
+"c:\Development\Recipes\frontend\public\index.html", "HTML", 0, 0, 0, 0, 0, 20, 0, 23, 1, 44
+"c:\Development\Recipes\frontend\public\manifest.json", "JSON", 0, 0, 25, 0, 0, 0, 0, 0, 1, 26
+"c:\Development\Recipes\frontend\src\App.css", "CSS", 33, 0, 0, 0, 0, 0, 0, 0, 7, 40
+"c:\Development\Recipes\frontend\src\App.jsx", "JavaScript JSX", 0, 0, 0, 38, 0, 0, 0, 1, 9, 48
+"c:\Development\Recipes\frontend\src\App.test.js", "JavaScript", 0, 0, 0, 0, 7, 0, 0, 0, 2, 9
+"c:\Development\Recipes\frontend\src\Components\Home\Home.jsx", "JavaScript JSX", 0, 0, 0, 22, 0, 0, 0, 0, 5, 27
+"c:\Development\Recipes\frontend\src\Components\Ingredients\IngredientPage\IngredientPage.jsx", "JavaScript JSX", 0, 0, 0, 8, 0, 0, 0, 0, 1, 9
+"c:\Development\Recipes\frontend\src\Components\Ingredients\IngredientsList\IngredientsList.jsx", "JavaScript JSX", 0, 0, 0, 50, 0, 0, 0, 0, 13, 63
+"c:\Development\Recipes\frontend\src\Components\Ingredients\IngredintsSearch\IngredientsSearch.jsx", "JavaScript JSX", 0, 0, 0, 64, 0, 0, 0, 0, 16, 80
+"c:\Development\Recipes\frontend\src\Components\LoginPage\LoginPage.jsx", "JavaScript JSX", 0, 0, 0, 62, 0, 0, 0, 0, 10, 72
+"c:\Development\Recipes\frontend\src\Components\MainHeader\MainHeader.css", "CSS", 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Development\Recipes\frontend\src\Components\MainHeader\MainHeader.jsx", "JavaScript JSX", 0, 0, 0, 41, 0, 0, 0, 0, 11, 52
+"c:\Development\Recipes\frontend\src\Components\NotFound\NotFound.jsx", "JavaScript JSX", 0, 0, 0, 8, 0, 0, 0, 0, 0, 8
+"c:\Development\Recipes\frontend\src\Components\Recipe\AddRecipe\AddRecipe.jsx", "JavaScript JSX", 0, 0, 0, 82, 0, 0, 0, 0, 12, 94
+"c:\Development\Recipes\frontend\src\Components\Recipe\RecipeCard\RecipeCard.css", "CSS", 73, 0, 0, 0, 0, 0, 0, 22, 14, 109
+"c:\Development\Recipes\frontend\src\Components\Recipe\RecipeCard\RecipeCard.jsx", "JavaScript JSX", 0, 0, 0, 96, 0, 0, 0, 1, 19, 116
+"c:\Development\Recipes\frontend\src\Components\Recipe\RecipeList\RecipeList.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Development\Recipes\frontend\src\Components\Recipe\RecipeList\RecipeList.jsx", "JavaScript JSX", 0, 0, 0, 64, 0, 0, 0, 0, 13, 77
+"c:\Development\Recipes\frontend\src\Components\User\UserCard\UserCard.jsx", "JavaScript JSX", 0, 0, 0, 19, 0, 0, 0, 0, 8, 27
+"c:\Development\Recipes\frontend\src\Components\User\UserInfo\UserInfo.jsx", "JavaScript JSX", 0, 0, 0, 94, 0, 0, 0, 0, 16, 110
+"c:\Development\Recipes\frontend\src\Components\errors\error-handler.js", "JavaScript", 0, 0, 0, 0, 9, 0, 0, 0, 4, 13
+"c:\Development\Recipes\frontend\src\index.css", "CSS", 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"c:\Development\Recipes\frontend\src\index.js", "JavaScript", 0, 0, 0, 0, 17, 0, 0, 5, 3, 25
+"c:\Development\Recipes\frontend\src\logo.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"c:\Development\Recipes\frontend\src\reportWebVitals.js", "JavaScript", 0, 0, 0, 0, 12, 0, 0, 0, 2, 14
+"c:\Development\Recipes\frontend\src\setupTests.js", "JavaScript", 0, 0, 0, 0, 1, 0, 0, 4, 1, 6
+"c:\Development\Recipes\frontend\src\store\history-slice.js", "JavaScript", 0, 0, 0, 0, 17, 0, 0, 0, 2, 19
+"c:\Development\Recipes\frontend\src\store\index.js", "JavaScript", 0, 0, 0, 0, 16, 0, 0, 0, 4, 20
+"c:\Development\Recipes\frontend\src\store\ingredient-search-slice.js", "JavaScript", 0, 0, 0, 0, 43, 0, 0, 0, 6, 49
+"c:\Development\Recipes\frontend\src\store\likes-slice.js", "JavaScript", 0, 0, 0, 0, 20, 0, 0, 0, 1, 21
+"c:\Development\Recipes\frontend\src\store\recipes-slice.js", "JavaScript", 0, 0, 0, 0, 27, 0, 0, 0, 3, 30
+"c:\Development\Recipes\frontend\src\store\user-slice.js", "JavaScript", 0, 0, 0, 0, 29, 0, 0, 8, 5, 42
+"c:\Development\Recipes\frontend\src\utils\apiCalls.js", "JavaScript", 0, 0, 0, 0, 51, 0, 0, 0, 9, 60
+"Total", "-", 121, 38, 18529, 648, 249, 20, 1, 64, 237, 19907

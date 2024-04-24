@@ -1,0 +1,109 @@
+.list {
+    list-style-type: none;
+}
+
+.recipe-card-in-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* This will space out your items evenly */
+    align-items: stretch;
+    /* This ensures that the items stretch to fill the container height */
+}
+
+
+.recipe-card {
+    background-color: beige;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    box-sizing: border-box;
+    /* This makes sure padding and border are included in the width */
+}
+
+p {
+    font-size: 16px;
+    max-width: 40ch;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 12px 24px;
+    /* Some padding */
+    text-align: center;
+    /* Center-align text */
+    text-decoration: none;
+    /* No underline */
+    display: inline-block;
+    /* Use inline-block */
+    font-size: 16px;
+    /* Set font-size */
+    margin: 4px 2px;
+    /* Some margin */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    border-radius: 25px;
+    /* Rounded corners */
+    transition: all 0.3s ease 0s;
+    /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+}
+
+.button:hover {
+    background-color: #45a049;
+    /* Darker shade of green */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* Bigger shadow */
+    transform: translateY(-2px);
+    /* Move the button up a bit */
+}
+
+.button:active {
+    background-color: #3e8e41;
+    /* Even darker green */
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    /* Small shadow */
+    transform: translateY(2px);
+    /* Push the button down a bit */
+}
+
+.show-more {
+    transition: all 5s ease 2s;
+}
+
+.liked-post-thumbs {
+    color: rgb(0, 255, 60);
+}
+.liked-post-thumbs:hover {
+    color: rgb(2, 169, 41);
+    cursor: pointer;
+}
+
+.not-yet-liked-post-thumbs {
+    color: grey;
+    
+}
+
+.not-yet-liked-post-thumbs:hover {
+    color: black;
+    cursor: pointer;
+}
+.like-counter{
+    color: black;
+font-size:  1.2em;
+padding: 0 0.5em;
+display: inline-block;
+}
+.likes-count{
+    font-size: 2em;
+    display: inline-block;
+
+}

@@ -1,0 +1,89 @@
+Date : 2024-03-21 19:32:16
+Directory : c:\Development\Recipes\frontend
+Total : 36 files,  19606 codes, 64 comments, 237 blanks, all 19907 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          3 |     18,529 |          0 |          3 |     18,532 |
+| JavaScript JSX |         13 |        648 |          2 |        133 |        783 |
+| JavaScript     |         12 |        249 |         17 |         42 |        308 |
+| CSS            |          5 |        121 |         22 |         25 |        168 |
+| Markdown       |          1 |         38 |          0 |         33 |         71 |
+| HTML           |          1 |         20 |         23 |          1 |         44 |
+| XML            |          1 |          1 |          0 |          0 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                 |         36 |     19,606 |         64 |        237 |     19,907 |
+| . (Files)                                                                                         |          3 |     18,542 |          0 |         35 |     18,577 |
+| public                                                                                            |          2 |         45 |         23 |          2 |         70 |
+| src                                                                                               |         31 |      1,019 |         41 |        200 |      1,260 |
+| src (Files)                                                                                       |          8 |        121 |         10 |         26 |        157 |
+| src\Components                                                                                    |         16 |        695 |         23 |        144 |        862 |
+| src\Components\Home                                                                               |          1 |         22 |          0 |          5 |         27 |
+| src\Components\Ingredients                                                                        |          3 |        122 |          0 |         30 |        152 |
+| src\Components\Ingredients\IngredientPage                                                         |          1 |          8 |          0 |          1 |          9 |
+| src\Components\Ingredients\IngredientsList                                                        |          1 |         50 |          0 |         13 |         63 |
+| src\Components\Ingredients\IngredintsSearch                                                       |          1 |         64 |          0 |         16 |         80 |
+| src\Components\LoginPage                                                                          |          1 |         62 |          0 |         10 |         72 |
+| src\Components\MainHeader                                                                         |          2 |         44 |          0 |         12 |         56 |
+| src\Components\NotFound                                                                           |          1 |          8 |          0 |          0 |          8 |
+| src\Components\Recipe                                                                             |          5 |        315 |         23 |         59 |        397 |
+| src\Components\Recipe\AddRecipe                                                                   |          1 |         82 |          0 |         12 |         94 |
+| src\Components\Recipe\RecipeCard                                                                  |          2 |        169 |         23 |         33 |        225 |
+| src\Components\Recipe\RecipeList                                                                  |          2 |         64 |          0 |         14 |         78 |
+| src\Components\User                                                                               |          2 |        113 |          0 |         24 |        137 |
+| src\Components\User\UserCard                                                                      |          1 |         19 |          0 |          8 |         27 |
+| src\Components\User\UserInfo                                                                      |          1 |         94 |          0 |         16 |        110 |
+| src\Components\errors                                                                             |          1 |          9 |          0 |          4 |         13 |
+| src\store                                                                                         |          6 |        152 |          8 |         21 |        181 |
+| src\utils                                                                                         |          1 |         51 |          0 |          9 |         60 |
++---------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                          | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Development\Recipes\frontend\README.md                                                         | Markdown       |         38 |          0 |         33 |         71 |
+| c:\Development\Recipes\frontend\package-lock.json                                                 | JSON           |     18,455 |          0 |          1 |     18,456 |
+| c:\Development\Recipes\frontend\package.json                                                      | JSON           |         49 |          0 |          1 |         50 |
+| c:\Development\Recipes\frontend\public\index.html                                                 | HTML           |         20 |         23 |          1 |         44 |
+| c:\Development\Recipes\frontend\public\manifest.json                                              | JSON           |         25 |          0 |          1 |         26 |
+| c:\Development\Recipes\frontend\src\App.css                                                       | CSS            |         33 |          0 |          7 |         40 |
+| c:\Development\Recipes\frontend\src\App.jsx                                                       | JavaScript JSX |         38 |          1 |          9 |         48 |
+| c:\Development\Recipes\frontend\src\App.test.js                                                   | JavaScript     |          7 |          0 |          2 |          9 |
+| c:\Development\Recipes\frontend\src\Components\Home\Home.jsx                                      | JavaScript JSX |         22 |          0 |          5 |         27 |
+| c:\Development\Recipes\frontend\src\Components\Ingredients\IngredientPage\IngredientPage.jsx      | JavaScript JSX |          8 |          0 |          1 |          9 |
+| c:\Development\Recipes\frontend\src\Components\Ingredients\IngredientsList\IngredientsList.jsx    | JavaScript JSX |         50 |          0 |         13 |         63 |
+| c:\Development\Recipes\frontend\src\Components\Ingredients\IngredintsSearch\IngredientsSearch.jsx | JavaScript JSX |         64 |          0 |         16 |         80 |
+| c:\Development\Recipes\frontend\src\Components\LoginPage\LoginPage.jsx                            | JavaScript JSX |         62 |          0 |         10 |         72 |
+| c:\Development\Recipes\frontend\src\Components\MainHeader\MainHeader.css                          | CSS            |          3 |          0 |          1 |          4 |
+| c:\Development\Recipes\frontend\src\Components\MainHeader\MainHeader.jsx                          | JavaScript JSX |         41 |          0 |         11 |         52 |
+| c:\Development\Recipes\frontend\src\Components\NotFound\NotFound.jsx                              | JavaScript JSX |          8 |          0 |          0 |          8 |
+| c:\Development\Recipes\frontend\src\Components\Recipe\AddRecipe\AddRecipe.jsx                     | JavaScript JSX |         82 |          0 |         12 |         94 |
+| c:\Development\Recipes\frontend\src\Components\Recipe\RecipeCard\RecipeCard.css                   | CSS            |         73 |         22 |         14 |        109 |
+| c:\Development\Recipes\frontend\src\Components\Recipe\RecipeCard\RecipeCard.jsx                   | JavaScript JSX |         96 |          1 |         19 |        116 |
+| c:\Development\Recipes\frontend\src\Components\Recipe\RecipeList\RecipeList.css                   | CSS            |          0 |          0 |          1 |          1 |
+| c:\Development\Recipes\frontend\src\Components\Recipe\RecipeList\RecipeList.jsx                   | JavaScript JSX |         64 |          0 |         13 |         77 |
+| c:\Development\Recipes\frontend\src\Components\User\UserCard\UserCard.jsx                         | JavaScript JSX |         19 |          0 |          8 |         27 |
+| c:\Development\Recipes\frontend\src\Components\User\UserInfo\UserInfo.jsx                         | JavaScript JSX |         94 |          0 |         16 |        110 |
+| c:\Development\Recipes\frontend\src\Components\errors\error-handler.js                            | JavaScript     |          9 |          0 |          4 |         13 |
+| c:\Development\Recipes\frontend\src\index.css                                                     | CSS            |         12 |          0 |          2 |         14 |
+| c:\Development\Recipes\frontend\src\index.js                                                      | JavaScript     |         17 |          5 |          3 |         25 |
+| c:\Development\Recipes\frontend\src\logo.svg                                                      | XML            |          1 |          0 |          0 |          1 |
+| c:\Development\Recipes\frontend\src\reportWebVitals.js                                            | JavaScript     |         12 |          0 |          2 |         14 |
+| c:\Development\Recipes\frontend\src\setupTests.js                                                 | JavaScript     |          1 |          4 |          1 |          6 |
+| c:\Development\Recipes\frontend\src\store\history-slice.js                                        | JavaScript     |         17 |          0 |          2 |         19 |
+| c:\Development\Recipes\frontend\src\store\index.js                                                | JavaScript     |         16 |          0 |          4 |         20 |
+| c:\Development\Recipes\frontend\src\store\ingredient-search-slice.js                              | JavaScript     |         43 |          0 |          6 |         49 |
+| c:\Development\Recipes\frontend\src\store\likes-slice.js                                          | JavaScript     |         20 |          0 |          1 |         21 |
+| c:\Development\Recipes\frontend\src\store\recipes-slice.js                                        | JavaScript     |         27 |          0 |          3 |         30 |
+| c:\Development\Recipes\frontend\src\store\user-slice.js                                           | JavaScript     |         29 |          8 |          5 |         42 |
+| c:\Development\Recipes\frontend\src\utils\apiCalls.js                                             | JavaScript     |         51 |          0 |          9 |         60 |
+| Total                                                                                             |                |     19,606 |         64 |        237 |     19,907 |
++---------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
