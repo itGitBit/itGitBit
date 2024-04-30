@@ -20,7 +20,7 @@ const LoginPage = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         const loginData = await performLogin(email, password);
-     
+
         if (loginData) {
             dispatch(login(loginData.accessToken));
             navigate(fromNavigated ? fromNavigated : '/');
@@ -28,21 +28,26 @@ const LoginPage = () => {
     }
 
     const performLogin = async (email, password) => {
-        const response = await fetch(`http://localhost:3001/users/login`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, password })
-        });
-        const data = await response.json();
-        if (response.status !== 200) {
-            errorHandler(data.details);
+        try {
+
+            const response = await fetch(`http://localhost:3001/users/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+            const data = await response.json();
+            if (response.status !== 200) {
+                errorHandler(data.details);
+            }
+            if (response.status === 200) {
+                return data;
+            }
+            return null;
+        } catch (error) {
+            errorHandler(error.message);
         }
-        if (response.status === 200) {
-            return data;
-        }
-        return null;
     }
 
     return (

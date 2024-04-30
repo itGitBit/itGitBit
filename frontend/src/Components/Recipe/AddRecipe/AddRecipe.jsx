@@ -7,6 +7,7 @@ import { setAllTagsList } from "../../../store/tags-slice";
 import { addToSelectedIngredientList, setFullIngredientList } from "../../../store/ingredient-search-slice";
 import { jwtDecode } from "jwt-decode";
 import { Combobox } from "react-widgets";
+import IngredientPage from "../../Ingredients/IngredientPage/IngredientPage";
 
 
 
@@ -19,19 +20,72 @@ const AddRecipe = () => {
     const [tags, setTags] = useState([]);
     const token = useSelector(state => state.user.token);
     const userId = token ? jwtDecode(token).id : null;
-    const allExistingIngredients = useSelector(state => state.ingredientsSearch.fullIngredientsList);
-    const allTheTags = useSelector(state => state.tags.allTagsList);
+    // const allExistingIngredients = useSelector(state => state.ingredientsSearch.fullIngredientsList);
+    // const allTheTags = useSelector(state => state.tags.allTagsList);
+    const [allTheTags, setAllTheTags] = useState([]);
+    const [allExistingIngredients, setAllExistingIngredients] = useState([]);
     const [selectedIngredients, setSelectedIngredients] = useState([]);
+    const [showRemoveButton, setShowRemoveButton] = useState(null);
+    const [open, setOpen] = useState(false);
 
+
+    useEffect(() => {
+        getAllTags();
+        getAllIngredients();
+    }, []);
+
+    const getAllTags = async () => {
+        const fetchedTags = await getAllData("tags");
+        setAllTheTags(fetchedTags);
+    }
+
+    const getAllIngredients = async () => {
+        const fetchedIngredients = await getAllData("ingredients");
+        setAllExistingIngredients(fetchedIngredients);
+    }
+
+    const handleRemoveIngredient = (ingredient) => {
+        setSelectedIngredients(selectedIngredients.filter(ing => ing.id !== ingredient.id));
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
     }
+
+    const handleIngredientSelect = (ingredient) => {
+        setSelectedIngredients(prevIngredients => {
+            const updatedIngredients = [...prevIngredients, ingredient];
+            return updatedIngredients;
+        });
+    }
+
 
     return (
         <div>
             <h1>Add Recipe</h1>
+            <div className="flex flex-wrap mb-4">
+                {selectedIngredients.map((ingredient, index) => (
+                    <div
+                        className="relative flex items-center"
+                        key={index}
+                        onMouseEnter={() => setShowRemoveButton(index)}
+                        onMouseLeave={() => setShowRemoveButton(null)}
+                        style={{ paddingRight: '2rem' }} // Adjust the padding to accommodate the button
+                    >
+                        <div className="badge relative bg-gray-200 rounded-md p-2 mr-2 mb-2 flex items-center">
+                            <IngredientPage name={ingredient.name} />
+                            {selectedIngredients[0].id !== 0 && <button
+                                className={`ml-2 text-red-500 opacity-0 absolute top-0 right-0 bg-gray-200 rounded-md p-1 focus:outline-none transition-opacity duration-300 ${showRemoveButton === index ? 'opacity-100' : 'opacity-0'
+                                    }`}
+                                onClick={() => handleRemoveIngredient(ingredient)}
+                            >
+                                X
+                            </button>}
+                        </div>
+                    </div>
+
+                ))}
+            </div>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Title:</label>
                 <input type="text" id="title" ref={title} placeholder="enter title" required />
@@ -44,7 +98,19 @@ const AddRecipe = () => {
                 <label htmlFor="tags">Tags:</label>
                 <Combobox placeholder="Enter Tags" data={allTheTags} textField="name" />
                 <label htmlFor="ingredients">Ingredients:</label>
-                <Combobox placeholder="Enter Ingredients" data={allExistingIngredients} onChange={setSelectedIngredients} value={selectedIngredients} textField="name" />
+
+                <Combobox
+                    placeholder="Enter Ingredients"
+                    data={allExistingIngredients}
+                    onChange={(e) => {
+                        setOpen(false)
+                        handleIngredientSelect(e)
+                    }}
+                    textField="name"
+                    open={open}
+                    onToggle={() => setOpen(!open)}
+                />
+                <button type="submit">Submit Recipe</button>
             </form>
 
         </div>
